@@ -11,6 +11,9 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Code Source</title>
   </head>
   <body>
@@ -19,12 +22,13 @@
         <figure>
           <img src="imagenes/logo.jpeg" alt="video" />
         </figure>
-        <ul class="lista">
+        <ul class="lista borrar">
           <li><a href="#">Inicio</a></li>
           <li><a href="#">Servicios</a></li>
           <li><a href="#">Proyectos</a></li>
           <li><a href="#">Contactenos</a></li>
         </ul>
+        <span class="menu"><i class="fas fa-bars "></i></span>
       </nav>
     </header>
     <section class="hero">
@@ -32,5 +36,89 @@
       <div class="fondo"></div>
         <h1>WEB SOURCE</h1>
     </section>
+    <section class="promocion">
+      <div class="promocion__imagenes"> 
+        <img src="imagenes/pm1.jpg" alt="">
+        <img src="imagenes/pm2.jpg" alt="">
+        <img src="imagenes/pm3.jpg" alt="">
+      </div>
+      <div class="promocion__informacion">
+<h2 class="informacion__titulo">
+  Diseñar un sitio web significa crear un recorrido de usuario de principio a fin
+</h2>
+<p class="informacion__parrafo">Necesita una planificación sólida, un toque de narración y un poco de inspiración. Desde bocetos a lápiz hasta sesiones
+de pizarra, pensamos en su proyecto desde todos los ángulos y desde todas las plataformas de marketing.</p>
+<div class="informacion__targetas">
+  <div class="tarjeta1"><img src="imagenes/ligero.png" alt="">
+  <h3>DISEÑO UX/UI</h3>
+</div>
+<div class="tarjeta2">
+    <img src="imagenes/diseño.png" alt="">
+    <h3>DISEÑO CREATIVO</h3>
+</div>
+  <div class="tarjeta3">
+    <img src="imagenes/medalla.png" alt="">
+    <h3>ESTRATEGIA DE CONTENIDO</h3>
+  </div>
+</div>
+      </div>
+    <div class="burbujas">
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+      <div class="burbuja"></div>
+    </div>
+    </section>
+    <section class="servicios">
+      <h2>Servicios</h2>
+      <div class="servicios__tarjetas">
+        <!-- tarjeta de diseño -->
+        <div class="servicios__tarjeta">
+          <img src="imagenes/diseño1.png" class="servicios__imagen" alt="">
+          <h5>Diseño
+            funcional</h5>
+          <p>Usamos estructuras funcionales y completamente navegables.</p>
+        </div>
+        <!-- tarjeta de responsive -->
+        <div class="servicios__tarjeta">
+          <img src="imagenes/smartphone.png" class="servicios__imagen" alt="">
+          <h5>Diseño
+          Responsive</h5>
+          <p>Adaptado a cualquier dispositivo móvil</p>
+        </div>
+        <!-- tarjeta seo -->
+          <div class="servicios__tarjeta">
+            <img src="imagenes/pc.png" class="servicios__imagen" alt="">
+            <h5>Posicionamiento
+            SEO</h5>
+            <p>Trabajamos en las técnicas Básicas para la optimización, velocidad y Seo de su sitio.</p>
+          </div>
+          <!-- tarjeta de la tienda -->
+            <div class="servicios__tarjeta">
+              <img src="imagenes/tienda.png" class="servicios__imagen" alt="">
+              <h5>Tiendas online</h5>
+              <p>Usamos estructuras funcionales y completamente navegables.</p>
+            </div>
+            <!-- tarjeta mantenimiento -->
+            <div class="servicios__tarjeta">
+              <img src="imagenes/mantenimiento.png" class="servicios__imagen" alt="">
+              <h5>Mantenmiento de
+              equipos de computo</h5>
+              <p>Usamos estructuras funcionales y completamente navegables.</p>
+            </div>   
+      </div>
+    </section>
+    <!------------------------------- proyectos -------------------------------------------->
+    <section class="proyectos">
+<h2>Proyectos</h2>
+    </section>
+    <script>
+      const d = document,
+      menu = d.querySelector('.menu'),
+      lista = d.querySelector('.lista')
+      menu.addEventListener("click", ()=>{
+        lista.classList.toggle('borrar')
+      })
+    </script>
   </body>
 </html>
